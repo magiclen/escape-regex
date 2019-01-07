@@ -2,6 +2,7 @@ Escape Regex
 ====================
 
 [![Build Status](https://travis-ci.org/magiclen/escape-regex.svg?branch=master)](https://travis-ci.org/magiclen/escape-regex)
+[![Build status](https://ci.appveyor.com/api/projects/status/3pg0fwrp5altj7y5/branch/master?svg=true)](https://ci.appveyor.com/project/magiclen/escape-regex/branch/master)
 
 Escape regular expression special characters in order to make it able to be concatenated safely by users.
 
