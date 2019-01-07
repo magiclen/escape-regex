@@ -8,7 +8,7 @@ Escape regular expression special characters in order to make it able to be conc
 
 ## Example
 
-Use the `escape` function of the `regex` create, instead of this crate.
+Use the `escape` function of the `regex` crate, instead of this crate.
 
 ```rust
 extern crate regex;
