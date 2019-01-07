@@ -1,4 +1,4 @@
-Escape Regex
+Escape Regex (Deprecated)
 ====================
 
 [![Build Status](https://travis-ci.org/magiclen/escape-regex.svg?branch=master)](https://travis-ci.org/magiclen/escape-regex)
@@ -8,28 +8,18 @@ Escape regular expression special characters in order to make it able to be conc
 
 ## Example
 
-```rust
-extern crate escape_regex;
+Use the `escape` function of the `regex` create, instead of this crate.
 
+```rust
 extern crate regex;
 
-use regex::Regex;
-
 let pattern = "123*456";
-let escaped_pattern = escape_regex::escape_string(pattern);
+let escaped_pattern = regex::escape(pattern);
 
-let reg = Regex::new(&escaped_pattern).unwrap();
+let reg = regex::Regex::new(&escaped_pattern).unwrap();
 
 assert_eq!(true, reg.is_match("0123*4567"));
 ```
-
-## Crates.io
-
-https://crates.io/crates/escape-regex
-
-## Documentation
-
-https://docs.rs/escape-regex
 
 ## License
 
