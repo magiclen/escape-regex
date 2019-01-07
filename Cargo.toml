@@ -1,0 +1,19 @@
+[package]
+name = "escape-regex"
+version = "1.0.0"
+authors = ["Magic Len <len@magiclen.org>"]
+homepage = "https://magiclen.org/escape-regex"
+keywords = ["escape", "regex"]
+categories = ["parsing"]
+description= "Escape regular expression special characters."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/escape-regex", branch = "master" }
+appveyor = { repository = "magiclen/escape-regex", branch = "master", service = "github" }
+
+[dependencies]
+
+[dev-dependencies]
+regex = "1.0"
